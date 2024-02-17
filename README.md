@@ -1,1 +1,1 @@
-# PhishingEmailAnalyzer
+Python script that analyzes emails for common phishing indicators. Takes in an email file and extracts URLs, domain names, IP addresses, and attached files. Uses AlienVault's Open Threat Exchange (OTX) database to determine if those factors have been identified as malicious. Also runs a spell/grammar check on the email, to detect grammatical errors common in phishing emails.
