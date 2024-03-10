@@ -1,6 +1,7 @@
 import API
 import spell_check
 import extract_info
+import check_keywords
 from OTXv2 import OTXv2
 from dotenv import load_dotenv
 import os
@@ -24,6 +25,8 @@ check_url = extract_info.extract_url(Body)
 
 filtered_words = spell_check.process_body(Body)
 spell_check.spell_grammar_check(filtered_words)
+
+check_keywords.find_keywords(Body)
 
 API.verify_domain(check_domain, otx)
 API.verify_hash(hashed, otx)
